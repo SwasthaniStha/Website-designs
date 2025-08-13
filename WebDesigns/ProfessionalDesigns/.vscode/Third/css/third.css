@@ -1,65 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap');
-*{
+
+* {
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.main{
-    background-color:rgb(255,186,0);
-    /* margin-left: 7%;
-    margin-right: 7%;
-    padding-bottom: 20%; */
-    /* display: flex; */
-    /* padding-top: 7%; */
-    font-size: 30px;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    /* justify-content: space-evenly; */
+
+body {
+    background-color: #ffba00;
+    padding-left: 2%;  /* Reduced side margins */
+    padding-right: 2%;
+    min-height: 100vh;
 }
-body{
-    background-color: black;
-    padding-left: 9%;
-    padding-right: 220px;
-}
-h1{
-   
-    padding-top: 3%;
+
+.main {
+    padding: 30px 0 50px;
     text-align: center;
 }
-img{
-    height: 450px;
-    width: 450px;
-   
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 800;
 }
-body{
-   height: 20vh;
-}
-.container{
-    padding-top: 1%;
-    height: auto;
+
+.container {
     display: flex;
-    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Increased from 25px for more card spacing */
 }
-#para{
-   
+
+.speaker {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    max-width: 320px;
+    flex: 1 1 300px;
     text-align: center;
-    padding-right: 8%;
+    padding-bottom: 15px;
 }
-#para2{
-    text-align: center;
-    padding-right: 8%;
+
+.speaker img {
+    width: 100%;
+    aspect-ratio: 1 / 1.1;
+    object-fit: cover;
 }
-#para3{
-    text-align: center;
+
+.speaker h2 {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: black;
 }
-h3{
-    line-height: 70px;
-    font-size: 23px;
+
+.speaker p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #333;
 }
-p{
-    font-size: 23px;
-    line-height: 10px;
-    margin-top: 0px;
+
+.speaker h3 {
+    margin-top: 8px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: black;
 }
-h2{
-    margin-bottom: 2%;
-    font-size: 35px;
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .container {
+        gap: 30px; /* Slightly less gap on mobile for compactness */
+    }
+    h1 {
+        font-size: 2rem;
+    }
 }

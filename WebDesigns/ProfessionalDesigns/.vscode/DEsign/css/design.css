@@ -1,115 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400;800&display=swap');
-*{font-family: 'Encode Sans Semi Expanded', sans-serif;
 
-}
-#header{
-    font-size: 40px;
-    color:white;
-    padding-bottom: 0px;
-    line-height: 90px;
-    padding-top: 60px;
-    font-weight: 900%;
-}
-h1{
-    font-weight: 1000;
-    line-height: 100px;
-    margin-bottom: 30px;
-}
-h2{
-    font-size: 35px;
-    color: white;
-    margin-top: 0px;
-    font-family: 'Inter', sans-serif;
-    padding-bottom: 80px; 
-    font-weight: normal;
-    margin-bottom: 70px;
-       
-}
-#para{
-    font-size: 23px;
-    color: white;
-    font-weight: 10px;
-    padding-bottom: 50px;
-    line-height: 6px;
-}
-.btn{ 
-   text-align: left;
-   cursor: pointer;
-   border-radius: 23px;
-   background-color: rgb(255,186,0);
-   padding: 10px 30px;
-   font-weight:bold;
-   height: 60px;
-   width: 470px;
-   font-size: 20px;
-   
-}
-img{
-    float: right;
-    height: 98vh;
-    width: 75vh;
-}
-.btn:hover{
-    background-color: black;
-    color: white;
-}
-.container{
-    padding: 15px 15px;
-    margin-top: 0px;
-    padding-bottom: 150px;
-    background-color:rgb(12,59,46) ;
-    margin-left: 150px;
-    margin-right: 150px;
-    padding-left: 100px;  
-}
-body{
-    background-color: black;
-}
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-*{
-    padding: 0;
+* {
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;}
-
-body{
-    background-color:rgb(12,59,46) ;
-    color: white;
-
-}
-img{
-    /* float: right; *
-    height: 100vh;
-    width: 50%;
-    margin-left: 50%;
-    
 }
 
-.other{
-    margin-left: 100px;
-    margin-top: -100vh;
-}
-
-h1{
-    font-size: 72px;
-    margin: 50px auto;
-}
-
-h2{
-    font-size: 28px;
-    margin-bottom: 70px;
-}
-
-p{
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
-button{
+body {
+    background-color: black;
     padding: 20px;
-    border-radius: 30px;
-    margin-top: 75px;
+}
+
+.container {
+    background-color: rgb(12, 59, 46);
+    color: white;
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.container img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    flex: 1 1 400px;
+}
+
+.text {
+    flex: 1 1 400px;
+}
+
+.text h1 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.text h2 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.text p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: rgb(255, 186, 0);
+    padding: 15px 30px;
     font-weight: bold;
-    background-color: darkgoldenrod;
+    font-size: 18px;
     border: none;
-} */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .text h1 {
+        font-size: 40px;
+    }
+    .text h2 {
+        font-size: 22px;
+    }
+    .text p {
+        font-size: 18px;
+    }
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
